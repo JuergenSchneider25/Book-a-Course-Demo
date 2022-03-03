@@ -2,6 +2,8 @@
 
 probleme mit valedirung 
 mobile first 
+zu viel zeit mit dem styling verloren 
+
 
 
 figma :
