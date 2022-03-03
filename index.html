@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>School of World</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+  
+
+<!--navbar-->
+
+<nav class="navbar">
+    <h1 class="brand">Chamberlain</h1>
+    <ul class="links-container">
+        <li class="links-item"><a href="#" class="link active">home</a></li>
+        <li class="links-item"><a href="course.html" class="link ">Courses</a></li>
+        <li class="links-item"><a href="#" class="link ">about</a></li>
+        <li class="links-item"><a href="#" class="link ">contact</a></li>
+    </ul>
+</nav>
+
+<!--home section-->
+
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">hi, </span> I`am EMMA</h1>
+        <p class="profession">Love Language</p>
+        <p class="info">I am reliable conscientious and dedicated. I am open minded and tolerant of all customs, values and traditions. 
+            I am patient and polite and do not mind working through things in a caring encouraging way with students. 
+            I strive to be prompt and efficient in my teaching methods. I also like to remain approachable. 
+            I do not want to make my students feel that I am judgmental or critical rather that i am encouraging and supportive.
+
+        </p>
+        <a href="#contact-section" class="btn">contact</a>
+    </div>
+<img src="IMG/Screenshot fromemma1 2022-02-28 11-02-19.png" alt="">
+</section>
+
+    <script src="storage.js"></script>
+
+    <!-- about section -->
+
+<section class="about" id="about-section">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading"> Teaching is my passion and hobby, so I am super lucky to have a job in education. 
+        I am understanding, patient, and aware of how to talk to beginner students. During a lesson, I focus on you and your abilities.
+        Your learning needs will be met through goal making, proper preparation, and teaching. 
+        During a lesson I will incorporate conversation, reading, writing, and evaluation. 
+        We will use fun and interesting digital material, in accordance with personal needs/interests.
+    </p>
+    <div class="seperator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="IMG/Screenshot from emma22022-02-28 11-03-49.png">
+        </div>
+        <div class="right-col">
+            <p class="about-para">My lessons are always lively, filled with enjoyable activities and most importantly my lessons are beneficial to my students. 
+                I use various teaching methodologies, props, flash cards and a white board to accomplish the desired goal.
+                I make use of Total Physical Response and Communicative Approach to better convey the knowledge to my student.
+                I am always polite to my students and I’m patient with them. I pay attention to every detail in my academic environment.
+  
+        </div>
+    </div>
+</section>
+
+<!-- contact form -->
+
+<section 
+
+      class="contact" id="contact-section">
+  <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+  <div class="seperator"></div>
+
+  <form action ="result.html" onsubmit= "return myFunction()">
+    <div class="contact-form"> 
+        <div class="name">
+            <input id = "firstName"  type="text" class="first-name" required placeholder="first name">
+            <input id = "lastName"   type="text" class="last-name" required placeholder="last name">
+        </div>
+            <input id = "email"      type="email" required class="email" placeholder="email">
+        <textarea  id = "message"  class="message" placeholder="message" required></textarea>
+        <button class=  "btn contact-btn">contact</button>
+    </div>
+</form>
+</section>
+
+
+<script>
+
+function myFunction(){
+        sessionStorage.setItem("firstName", document.getElementById("firstName").value);
+        sessionStorage.setItem("lastName", document.getElementById("lastName").value);
+        sessionStorage.setItem("email", document.getElementById("email").value);
+       sessionStorage.setItem("messege", document.getElementById("messege").value);
+       return true;
+    }
+</script>
+
+
+
+
+</body>
+</html>
